@@ -8,18 +8,35 @@
 import SwiftUI
 
 struct NameCardListView: View {
-    @State private var inputName = ""
+    @State private var inputNum = ""
+    @State private var num = 1
     var body: some View {
         NavigationView {
-            List(0..<10) { item in
-                VStack(alignment: .leading) {
-                    NavigationLink(destination: NameCardView(NameNum: item)) {
-                        Text("NameCard No.\(item + 1)")
-                            .font(.system(size: 16))
+            VStack {
+                HStack(spacing: 5.0){
+                TextField("input Num", text: $inputNum)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .accessibility(identifier: "inputNumTextField")
+                    Button("Go", action: {
+                        num = Int(inputNum) ?? 1
+                        print(num)
+                    })
+                    .foregroundColor(.black)
+                    .frame(width: 50, height: 30)
+                    .background(Color.gray)
+                    .cornerRadius(5)
+                        .padding()
+                }.padding(.horizontal)
+                List(0..<10) { item in
+                    VStack(alignment: .leading) {
+                        NavigationLink(destination: NameCardView(NameNum: item + num)) {
+                            Text("NameCard No.\(item + num)")
+                                .font(.system(size: 16))
+                        }
                     }
                 }
+                .navigationTitle("ListView")
             }
-            .navigationTitle("ListView")
         }
     }
 }
