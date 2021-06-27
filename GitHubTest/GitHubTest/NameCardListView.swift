@@ -15,7 +15,7 @@ struct NameCardListView: View {
                     NameCardView(NameNum: item)
                 }
             }
-            .navigationTitle("Title")
+            .navigationTitle("ListView")
         }
     }
 }
