@@ -9,8 +9,12 @@ import SwiftUI
 
 struct NameCardListView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            Text("Title")
+                .font(.title).bold()
+            Spacer()
             NameCardView()
+            Spacer()
         }
     }
 }
