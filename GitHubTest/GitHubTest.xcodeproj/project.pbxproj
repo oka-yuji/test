@@ -47,6 +47,7 @@
 		280E03032687722B008C8CFD /* GitHubTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTestUITests.swift; sourceTree = "<group>"; };
 		280E03052687722B008C8CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		280E031126881612008C8CFD /* NameCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardListView.swift; sourceTree = "<group>"; };
+		280E031326882E49008C8CFD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 				280E02E62687722A008C8CFD /* GitHubTestApp.swift */,
 				280E02E82687722A008C8CFD /* ContentView.swift */,
 				280E031126881612008C8CFD /* NameCardListView.swift */,
+				280E031326882E49008C8CFD /* README.md */,
 				280E02EA2687722B008C8CFD /* Assets.xcassets */,
 				280E02EF2687722B008C8CFD /* Info.plist */,
 				280E02EC2687722B008C8CFD /* Preview Content */,
