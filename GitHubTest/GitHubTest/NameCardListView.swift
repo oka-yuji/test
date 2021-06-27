@@ -9,12 +9,13 @@ import SwiftUI
 
 struct NameCardListView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Title")
-                .font(.title).bold()
-            Spacer()
-            NameCardView()
-            Spacer()
+        NavigationView {
+            List(0..<10) { item in
+                VStack(alignment: .leading) {
+                    NameCardView(NameNum: item)
+                }
+            }
+            .navigationTitle("Title")
         }
     }
 }
@@ -26,6 +27,7 @@ struct NameCardListView_Previews: PreviewProvider {
 }
 
 struct NameCardView: View {
+    @State var NameNum:Int
     var body: some View {
         HStack {
             Image(systemName: "person.circle")
@@ -33,7 +35,7 @@ struct NameCardView: View {
                 .frame(width: 50, height: 50)
             Spacer()
             VStack(alignment: .leading){
-                Text("Name:test name")
+                Text("Name:test name \(NameNum)")
                     .font(.title2).bold()
                 Text("Details: age ,sex")
                     .font(.caption)
