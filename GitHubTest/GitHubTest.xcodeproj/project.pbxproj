@@ -13,6 +13,7 @@
 		280E02EE2687722B008C8CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280E02ED2687722B008C8CFD /* Preview Assets.xcassets */; };
 		280E02F92687722B008C8CFD /* GitHubTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E02F82687722B008C8CFD /* GitHubTestTests.swift */; };
 		280E03042687722B008C8CFD /* GitHubTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E03032687722B008C8CFD /* GitHubTestUITests.swift */; };
+		280E031226881612008C8CFD /* NameCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E031126881612008C8CFD /* NameCardListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		280E02FF2687722B008C8CFD /* GitHubTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280E03032687722B008C8CFD /* GitHubTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTestUITests.swift; sourceTree = "<group>"; };
 		280E03052687722B008C8CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280E031126881612008C8CFD /* NameCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				280E02E62687722A008C8CFD /* GitHubTestApp.swift */,
 				280E02E82687722A008C8CFD /* ContentView.swift */,
+				280E031126881612008C8CFD /* NameCardListView.swift */,
 				280E02EA2687722B008C8CFD /* Assets.xcassets */,
 				280E02EF2687722B008C8CFD /* Info.plist */,
 				280E02EC2687722B008C8CFD /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280E031226881612008C8CFD /* NameCardListView.swift in Sources */,
 				280E02E92687722A008C8CFD /* ContentView.swift in Sources */,
 				280E02E72687722A008C8CFD /* GitHubTestApp.swift in Sources */,
 			);
