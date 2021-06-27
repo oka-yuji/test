@@ -25,11 +25,15 @@ struct NameCardListView: View {
                     .frame(width: 50, height: 30)
                     .background(Color.gray)
                     .cornerRadius(5)
+                    .accessibility(identifier: "goButton")
                         .padding()
                 }.padding(.horizontal)
+                Text("\(num)")
+                    .accessibility(identifier: "numText")
                 List(0..<10) { item in
                     VStack(alignment: .leading) {
-                        NavigationLink(destination: NameCardView(NameNum: item + num)) {
+                        NavigationLink(destination: NameCardView(NameNum: item + num))
+                        {
                             Text("NameCard No.\(item + num)")
                                 .font(.system(size: 16))
                         }
