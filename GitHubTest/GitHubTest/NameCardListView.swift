@@ -12,7 +12,10 @@ struct NameCardListView: View {
         NavigationView {
             List(0..<10) { item in
                 VStack(alignment: .leading) {
-                    NameCardView(NameNum: item)
+                    NavigationLink(destination: NameCardView(NameNum: item)) {
+                        Text("NameCard No.\(item + 1)")
+                            .font(.system(size: 16))
+                    }
                 }
             }
             .navigationTitle("ListView")
